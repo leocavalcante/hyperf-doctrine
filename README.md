@@ -2,6 +2,8 @@
 
 This project provides an integration for the Doctrine ORM and the Hyperf framework.
 
+[![CI](https://github.com/leocavalcante/hyperf-doctrine/actions/workflows/ci.yml/badge.svg)](https://github.com/leocavalcante/hyperf-doctrine/actions/workflows/ci.yml)
+
 ## Install
 ```
 composer require leocavalcante/hyperf-doctrine
