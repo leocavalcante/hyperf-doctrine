@@ -1,0 +1,9 @@
+parameters:
+    level: 9
+    paths:
+        - src
+    ignoreErrors:
+        - '#Constant BASE_PATH not found\.#'
+        - '#Call to an undefined method Hyperf\\DB\\DB::prepare\(\)\.#'
+        - '#Call to an undefined method Hyperf\\DB\\DB::quote\(\)\.#'
+        - '#Call to an undefined method Hyperf\\DB\\DB::lastInsertId\(\)\.#'

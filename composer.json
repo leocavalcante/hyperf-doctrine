@@ -1,0 +1,57 @@
+{
+    "name": "leocavalcante/hyperf-doctrine",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "doctrine",
+        "orm"
+    ],
+    "description": "This project provides an integration for the Doctrine ORM and the Hyperf framework.",
+    "autoload": {
+        "psr-4": {
+            "Hyperf\\Doctrine\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "ext-pdo": "*",
+        "doctrine/orm": "^2.11",
+        "hyperf/db": "^2.2"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.6",
+        "mockery/mockery": "^1.5",
+        "phpstan/phpstan": "^1.4",
+        "phpunit/phpunit": ">=9.5",
+        "spatie/phpunit-watcher": "^1.23",
+        "swoole/ide-helper": "^4.8"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit --coverage-text",
+        "analyse": "phpstan analyse --memory-limit 128M",
+        "cs-fix": "php-cs-fixer fix $1",
+        "ci":  [
+            "php-cs-fixer fix --dry-run --diff --verbose",
+            "@composer analyse",
+            "@composer test"
+        ]
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Hyperf\\Doctrine\\ConfigProvider"
+        }
+    }
+}
