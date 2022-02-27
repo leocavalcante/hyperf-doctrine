@@ -56,7 +56,7 @@ You can edit Doctrine's Entity Manager settings in `config/autoload/doctrine.php
 ```php
 return [
     'connection' => [
-        'driver' => Hyperf\Doctrine\Driver::class,
+        'driverClass' => Hyperf\Doctrine\Driver::class,
         'pool' => 'default',
     ],
     'config' => Doctrine\ORM\Tools\Setup::createAnnotationMetadataConfiguration([__DIR__ . '/app']),
