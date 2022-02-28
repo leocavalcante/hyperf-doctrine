@@ -31,3 +31,6 @@ jobs:
 
     - name: Run CI script
       run: composer run-script ci
+      
+    - name: Codecov
+      uses: codecov/codecov-action@v2.1.0
