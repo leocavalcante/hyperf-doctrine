@@ -20,7 +20,7 @@
             <file>src/EntityManagerFactory.php</file>
         </exclude>
         <report>
-            <clover outputFile="clover.xml"/>
+            <clover outputFile="clover-coverage-report.xml"/>
         </report>
     </coverage>
 
