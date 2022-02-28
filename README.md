@@ -4,6 +4,7 @@ This project provides an integration for the Doctrine ORM and the Hyperf framewo
 
 [![CI](https://github.com/leocavalcante/hyperf-doctrine/actions/workflows/ci.yml/badge.svg)](https://github.com/leocavalcante/hyperf-doctrine/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/leocavalcante/hyperf-doctrine/branch/main/graph/badge.svg?token=YdK7pQfcOQ)](https://codecov.io/gh/leocavalcante/hyperf-doctrine)
+![PHPStan](https://img.shields.io/badge/PHPStan-level%209-brightgreen.svg?style=flat)
 
 ## Install
 ```
