@@ -8,11 +8,19 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php-versions: ['8.0', '8.1']
 
     steps:
     - uses: actions/checkout@v2
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: ${{ matrix.php-versions }}
+        coverage: pcov
 
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
@@ -34,5 +42,3 @@ jobs:
       
     - name: Codecov
       uses: codecov/codecov-action@v2.1.0
-      with:
-        files: ./clover-coverage-report.xml
