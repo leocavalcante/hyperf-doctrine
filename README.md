@@ -1,3 +1,10 @@
+The project will be continued at:
+https://github.com/opencodeco/hyperf-doctrine
+
+Thanks!
+
+---
+
 # Hyperf 🤝 Doctrine
 
 This project provides an integration for the Doctrine ORM and the Hyperf framework.
